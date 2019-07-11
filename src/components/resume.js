@@ -22,13 +22,13 @@ class Resume extends Component {
 
             <h2 style={{paddingTop: '2em'}}>Mason Cable</h2>
             <h4 style={{color: 'grey'}}>Full Stack web developer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            {/* <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/> */}
             {/* <h5>Address</h5>
             <p>1 Hacker Way Menlo Park, 94025</p> */}
             <h5>Phone</h5>
-            <p>(123) 456-7890</p>
+            <p>(702) 635-2122</p>
             <h5>Email</h5>
             <p>masoncablelsc@gmail.com</p>
             <h5>Web</h5>
@@ -41,27 +41,32 @@ class Resume extends Component {
               startYear={ "June 2018" }
               endYear={ "September 2018" }
               schoolName={"Punch Code"}
-              schoolDescription={"Hello"}
+              schoolDescription={`Punch Code was a very fast paced code school; we would started out by learing basic HTML5, CSS3, and JavScript. 
+              after we had a better understsanding of dom-manipulation and API functionality, we moved on to frameworks such as React.js. During this we learned how to manage the backend with technologies such as express.js and SQL. } `}
                />
-               <Education
+               {/* <Education
                  startYear={2007}
                  endYear={2009}
                  schoolName="My 2nd University"
                  schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  />
+                  /> */}
                 <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Experience</h2>
             <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              startYear={2018}
+              endYear={2019}
+              jobName="ETL Success Engineer"
+              jobDescription="‣ Worked directly with clients to design and implement database workflows 
+                              ‣ Wrote SQL Queries and REST API Calls 
+                              ‣ Created and updated software documentation and tutorials"
               />
               <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                startYear={2015}
+                endYear={2018}
+                jobName="Longevity Sports Center"
+                jobDescription="     ‣ Helped manage adult soccer leagues
+                              ‣ Coached co-ed children ages ranging from 18 months to 14 years soccer.
+                              ‣ Led summer and spring camps. "
                 />
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
@@ -71,16 +76,20 @@ class Resume extends Component {
                 />
                 <Skills
                   skill="HTML/CSS"
-                  progress={80}
+                  progress={100}
                   />
-                  <Skills
-                    skill="NodeJS"
-                    progress={50}
+                    <Skills
+                    skill="Express.js"
+                    progress={30}
                     />
                     <Skills
-                      skill="React"
-                      progress={25}
+                      skill="NodeJS"
+                      progress={60}
                       />
+                      <Skills
+                        skill="React"
+                        progress={50}
+                        />
           </Cell>
         </Grid>
       </div>
