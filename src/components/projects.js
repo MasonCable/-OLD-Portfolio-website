@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
+import Fft from '../assets/fft.jpeg'
 
 
 class Projects extends Component {
@@ -15,15 +16,15 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >Food For Thought</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(${Fft}) center / cover`}} >Food For Thought</CardTitle>
             <CardText >
               Our site allows for the tracking and reporting of donations by local businesses for tax-reduction purposes. It also allows these businesses to examine food waste in a quantifiable way in order to reduce overspending on their own terms. Local charities are able to select only the food donations that fit their particular needs for that day and can see in real-time as donations become available across the valley.
             </CardText>
             <CardActions border>
               {/* <Button colored>GitHub</Button> */}
               <a href='https://github.com/Keen12321/Food-For-Thought' target="_blank"><Button colored>GitHub</Button></a>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              {/* <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button> */}
               
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -53,8 +54,8 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              {/* <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button> */}
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -81,9 +82,9 @@ class Projects extends Component {
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
+          {/* <Tab>Angular</Tab> */}
           <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Python</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>
