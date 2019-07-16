@@ -18,9 +18,9 @@ class Projects extends Component {
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${Fft}) center / cover`}} >Food For Thought</CardTitle>
             <CardText >
-              Our site allows for the tracking and reporting of donations by local businesses for tax-reduction purposes. It also allows these businesses to examine food waste in a quantifiable way in order to reduce overspending on their own terms. Local charities are able to select only the food donations that fit their particular needs for that day and can see in real-time as donations become available across the valley.
+              Full-stack application designed to help meal centers and restaurants coordinate meal donations more effectively. The app helps restaurants manage their donations for tax record keeping purposes and gives meal centers quick access to food while offering navigation assistance with the use of a mobile app.
             </CardText>
-            <CardActions border>
+            <CardActions border >
               {/* <Button colored>GitHub</Button> */}
               <a href='https://github.com/Keen12321/Food-For-Thought' target="_blank"><Button colored>GitHub</Button></a>
               {/* <Button colored>CodePen</Button>
@@ -65,17 +65,13 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Angular</h1></div>
+        <div><h1>This is VueJs</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is VueJS</h1></div>
+        <div><h1>This is Python</h1></div>
       )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
-    }
+    } 
   }
   render() {
     return(

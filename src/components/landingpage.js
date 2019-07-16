@@ -33,14 +33,14 @@ class Landing extends Component {
                 </a>
 
                 {/* Freecodecamp */}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                {/* <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-free-code-camp" aria-hidden="true" />
-                </a>
+                </a> */}
 
                 {/* Youtube */}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                {/* <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                   <i className="fa fa-youtube-square" aria-hidden="true" />
-                </a>
+                </a> */}
 
               </div>
             </div>
