@@ -15,7 +15,7 @@ class Contact extends Component {
               style={{height: '250px'}}
                />
              <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>
-              I am and currently and 18 year old, Punch Code graduate who spends his 
+              Punch Code graduate who spends his 
               time writing JavaScript programs and building full-stack web applications.
               
             </p>

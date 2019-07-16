@@ -16,8 +16,8 @@ class Projects extends Component {
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >Food For Thought</CardTitle>
-            <CardText>
-              This project is a multi page web application 
+            <CardText >
+              Our site allows for the tracking and reporting of donations by local businesses for tax-reduction purposes. It also allows these businesses to examine food waste in a quantifiable way in order to reduce overspending on their own terms. Local charities are able to select only the food donations that fit their particular needs for that day and can see in real-time as donations become available across the valley.
             </CardText>
             <CardActions border>
               {/* <Button colored>GitHub</Button> */}
@@ -38,8 +38,8 @@ class Projects extends Component {
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
+              {/* <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button> */}
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
