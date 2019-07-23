@@ -33,12 +33,15 @@ class Projects extends Component {
           </Card>
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >Lyric Finder</CardTitle>
             <CardText>
-              Lorm Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              An app that finds song lyrics using React and the Musixmatch API. Other technologies used were Bootstrap4, Axios, and FontAwesome
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
+              <a href="https://github.com/MasonCable/LyricFinder" target="_blank"><Button colored>GitHub</Button></a>
+              <a href="https://lyric-finder-mason-c.herokuapp.com/" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a>
+
+              
               {/* <Button colored>CodePen</Button>
               <Button colored>Live Demo</Button> */}
             </CardActions>
