@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 import Fft from '../assets/fft.jpeg'
+import lyricFinder from '../assets/lyricfinder.png'
 
 
 class Projects extends Component {
@@ -33,7 +34,7 @@ class Projects extends Component {
           </Card>
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >Lyric Finder</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: `url(${lyricFinder}) center / cover`}} >Lyric Finder</CardTitle>
             <CardText>
               An app that finds song lyrics using React and the Musixmatch API. Other technologies used were Bootstrap4, Axios, and FontAwesome
             </CardText>
