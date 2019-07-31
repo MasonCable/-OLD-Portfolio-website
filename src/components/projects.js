@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 import Fft from '../assets/fft.jpeg'
 import lyricFinder from '../assets/lyricfinder.png'
+import weatherapp from '../assets/weatherapp.png'
 
 
 class Projects extends Component {
@@ -52,14 +53,13 @@ class Projects extends Component {
           </Card>
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${weatherapp}) center / cover`}} >Weather application</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              With this application, I used the open-weather-map api to build an application that allows the user to search the weather in their given area. 
             </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              {/* <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button> */}
+              <a href="https://github.com/MasonCable/weather-application" target="_blank"><Button colored>GitHub</Button></a>
+              <a href="https://powerful-reaches-20005.herokuapp.com" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
@@ -73,7 +73,7 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is Python</h1></div>
+        <div><h1>This is React Native</h1></div>
       )
     } 
   }
@@ -84,7 +84,7 @@ class Projects extends Component {
           <Tab>React</Tab>
           {/* <Tab>Angular</Tab> */}
           <Tab>VueJS</Tab>
-          <Tab>Python</Tab>
+          <Tab>React Native</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>
