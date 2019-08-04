@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl'
 import Fft from '../assets/fft.jpeg'
 import lyricFinder from '../assets/lyricfinder.png'
-import weatherapp from '../assets/weatherapp.png'
+import newWeather from '../assets/newWeather.png'
 
 
 class Projects extends Component {
@@ -53,7 +53,7 @@ class Projects extends Component {
           </Card>
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${weatherapp}) center / cover`}} >Weather application</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${newWeather}) center / cover`}} >Weather application</CardTitle>
             <CardText>
               With this application, I used the open-weather-map api to build an application that allows the user to search the weather in their given area. 
             </CardText>
