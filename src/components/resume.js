@@ -69,7 +69,7 @@ class Resume extends Component {
                               ‣ Led summer and spring camps. "
                 />
               <hr style={{borderTop: '3px solid #e22947'}} />
-              <h2>Skills</h2>
+              
               {/* <Skills
                 skill="javascript"
                 progress={100}
