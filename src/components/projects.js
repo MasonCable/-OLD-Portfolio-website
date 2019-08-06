@@ -3,6 +3,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, 
 import Fft from '../assets/fft.jpeg'
 import lyricFinder from '../assets/lyricfinder.png'
 import newWeather from '../assets/newWeather.png'
+import cardValidate from '../assets/cardValidate.png'
 
 
 class Projects extends Component {
@@ -60,6 +61,20 @@ class Projects extends Component {
             <CardActions border>
               <a href="https://github.com/MasonCable/weather-application" target="_blank"><Button colored>GitHub</Button></a>
               <a href="https://powerful-reaches-20005.herokuapp.com" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+          {/* Project 4 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${cardValidate}) center / cover`}} ></CardTitle>
+            <CardText>
+              This is a very simple application that validates credit cards in real time, while you type in the first4 digits of your card, the app checks those inputs against card-validator's api, if the card is real the info can be sent through, if not the card will reset. 
+            </CardText>
+            <CardActions border>
+              <a href="https://github.com/MasonCable/cardvalidator" target="_blank"><Button colored>GitHub</Button></a>
+              <a href="https://card-validate.herokuapp.com/" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
               <IconButton name="share" />
