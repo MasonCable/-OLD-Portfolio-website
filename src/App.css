@@ -81,18 +81,13 @@ img {
 }
 
 .banner-text {
-  background-color: black;
+  
   opacity: .8;
-  width: 75%;
+  
   margin: auto;
-  border-radius: 10px;
+  
 }
 
-.banner-text h1, h3 {
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
-}
 
 .banner-text h3 {
   padding-top:2%;

@@ -14,8 +14,8 @@ class Landing extends Component {
               className="avatar-img"
               />
 
-            <div className="banner-text">                
-              <h1>Full Stack Web Developer</h1>
+            <div className="banner-text" style={{ color: '#fff' }, styles}>
+              <h1 style={{ fontWeight: 'bold', color: '#fff' }}>Full Stack Web Developer</h1>
             <hr/>
 
               <p>HTML/CSS | JavaScript | React | React Native | NodeJS | Express | MySQL</p>
@@ -52,3 +52,8 @@ class Landing extends Component {
 }
 
 export default Landing;
+
+const styles = {
+  backgroundColor: 'black',  
+  borderRadius: 20 + '%'
+}
