@@ -55,5 +55,7 @@ export default Landing;
 
 const styles = {
   backgroundColor: 'black',  
-  borderRadius: 20 + '%'
+  borderRadius: 20 + '%',
+  margin: 'auto',
+  width: 80 + '%'
 }

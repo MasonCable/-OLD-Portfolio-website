@@ -4,6 +4,7 @@ import Fft from '../assets/fft.jpeg'
 import lyricFinder from '../assets/lyricfinder.png'
 import newWeather from '../assets/newWeather.png'
 import cardValidate from '../assets/cardValidate.png'
+import recipeGod from '../assets/recipeGod.png'
 
 
 class Projects extends Component {
@@ -16,9 +17,9 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0){
       return(
-        <div className='d-flex flex-wrap'>
+        <div className='d-flex flex-wrap mb-4'>
           {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${Fft}) center / cover`}} >Food For Thought</CardTitle>
             <CardText >
               Full-stack application designed to help meal centers and restaurants coordinate meal donations more effectively. The app helps restaurants manage their donations for tax record keeping purposes and gives meal centers quick access to food while offering navigation assistance with the use of a mobile app.
@@ -35,7 +36,7 @@ class Projects extends Component {
             </CardMenu>
           </Card>
           {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${lyricFinder}) center / cover`}} >Lyric Finder</CardTitle>
             <CardText>
               An app that finds song lyrics using React and the Musixmatch API. Other technologies used were Bootstrap4, Axios, and FontAwesome
@@ -53,8 +54,8 @@ class Projects extends Component {
             </CardMenu>
           </Card>
           {/* Project 3 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${newWeather}) center / cover`}} >Weather application</CardTitle>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${newWeather}) center / cover`}} ></CardTitle>
             <CardText>
               With this application, I used the open-weather-map api to build an application that allows the user to search the weather in their given area. 
             </CardText>
@@ -67,7 +68,22 @@ class Projects extends Component {
             </CardMenu>
           </Card>
           {/* Project 4 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${recipeGod}) center / cover`}} ></CardTitle>
+            <CardText>
+              This site allows the user to search for recipes with a large array of parameters. You can search for foods by the category, protein, vegetable, and ingredient.
+            </CardText>
+            <CardActions border>
+              <a href="https://github.com/MasonCable/recipe-app" target="_blank"><Button colored>GitHub</Button></a>
+              <a href="https://recipe-god.firebaseapp.com/" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 5 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
             <CardTitle style={{color: '#fff', height: '176px', background: ` url(${cardValidate}) center / cover`}} ></CardTitle>
             <CardText>
               This is a very simple application that validates credit cards in real time, while you type in the first4 digits of your card, the app checks those inputs against card-validator's api, if the card is real the info can be sent through, if not the card will reset. 
@@ -80,6 +96,8 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          
+           
         </div>
       )
     } else if(this.state.activeTab === 1) {
@@ -111,3 +129,4 @@ class Projects extends Component {
   }
 }
 export default Projects
+
