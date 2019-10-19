@@ -32,11 +32,12 @@ class Resume extends Component {
             <h5>Email</h5>
             <p>masoncablelsc@gmail.com</p>
             <h5>Web</h5>
-            <p>masoncable.dev</p>
+            <a  style={{color: '#000'}} href="https://shielded-crag-63275.herokuapp.com" target='_blank'><p>masoncable.dev</p></a>
             <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Education</h2>
+            
             <Education
               startYear={ "June 2018" }
               endYear={ "September 2018" }
@@ -52,6 +53,14 @@ class Resume extends Component {
                   /> */}
                 <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Experience</h2>
+              <Experience
+              startYear={2019}
+              endYear={'Present'}
+              jobName="Freelance Web Developer"
+              jobDescription="‣ Build Full Stack web appplications for clients 
+                              ‣ Deploy and host websites for clients
+                              ‣ Maintain a line of communication with client to assure the success of a project"
+              />
             <Experience
               startYear={2018}
               endYear={2019}
@@ -61,6 +70,14 @@ class Resume extends Component {
                               ‣ Created and updated software documentation and tutorials"
               />
               <Experience
+                startYear={2018}
+                endYear={2019}
+                jobName="Web Developer (Contract) "
+                jobDescription="     ‣ Worked with a team of developers to build a new admin page for a website
+                              ‣ Used Vue.js and Node.js to build a fullstack website
+                              ‣ Deployed resuable code to a git repository "
+                />
+              <Experience
                 startYear={2015}
                 endYear={2018}
                 jobName="Longevity Sports Center"
@@ -68,28 +85,9 @@ class Resume extends Component {
                               ‣ Coached co-ed children ages ranging from 18 months to 14 years soccer.
                               ‣ Led summer and spring camps. "
                 />
+                
               <hr style={{borderTop: '3px solid #e22947'}} />
-              
-              {/* <Skills
-                skill="javascript"
-                progress={100}
-                />
-                <Skills
-                  skill="HTML/CSS"
-                  progress={100}
-                  />
-                    <Skills
-                    skill="Express.js"
-                    progress={30}
-                    />
-                    <Skills
-                      skill="NodeJS"
-                      progress={60}
-                      />
-                      <Skills
-                        skill="React"
-                        progress={50}
-                        /> */}
+     
           </Cell>
         </Grid>
       </div>
