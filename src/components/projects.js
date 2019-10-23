@@ -5,7 +5,7 @@ import lyricFinder from '../assets/lyricfinder.png'
 import newWeather from '../assets/newWeather.png'
 import cardValidate from '../assets/cardValidate.png'
 import recipeGod from '../assets/recipeGod.png'
-
+import ecom from '../assets/ecom.png'
 
 class Projects extends Component {
   constructor(props) {
@@ -18,6 +18,19 @@ class Projects extends Component {
     if(this.state.activeTab === 0){
       return(
         <div className='d-flex flex-wrap mb-4'>
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
+            <CardTitle style={{color: '#fff', height: '176px', background: ` url(${ecom}) center / cover`}} ></CardTitle>
+            <CardText>
+              Broiler plate ecomerce application.
+            </CardText>
+            <CardActions border>
+              <a href="https://github.com/MasonCable/ecomerce-site" target="_blank"><Button colored>GitHub</Button></a>
+              {/* <a href="https://card-validate.herokuapp.com/" target="_blank"><Button colored style={{margin:"auto"}}>Website</Button></a> */}
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}} >
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${Fft}) center / cover`}} >Food For Thought</CardTitle>

@@ -45,21 +45,16 @@ class Resume extends Component {
               schoolDescription={`Punch Code was a very fast paced code school; we would started out by learing basic HTML5, CSS3, and JavScript. 
               after we had a better understsanding of dom-manipulation and API functionality, we moved on to frameworks such as React.js. During this we learned how to manage the backend with technologies such as express.js and SQL. } `}
                />
-               {/* <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  /> */}
+               
                 <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Experience</h2>
               <Experience
-              startYear={2019}
-              endYear={'Present'}
-              jobName="Freelance Web Developer"
-              jobDescription="‣ Build Full Stack web appplications for clients 
-                              ‣ Deploy and host websites for clients
-                              ‣ Maintain a line of communication with client to assure the success of a project"
+                    startYear={2019}
+                    endYear={'Present'}
+                    jobName="Freelance Web Developer"
+                    jobDescription="‣ Build Full Stack web appplications for clients 
+                                    ‣ Deploy and host websites for clients
+                                    ‣ Maintain a line of communication with client to assure the success of a project"
               />
             <Experience
               startYear={2018}
